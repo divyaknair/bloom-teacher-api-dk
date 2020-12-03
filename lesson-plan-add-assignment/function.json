@@ -1,0 +1,18 @@
+{
+    "bindings": [
+      {
+        "authLevel": "anonymous",
+        "type": "httpTrigger",
+        "direction": "in",
+        "name": "req",
+        "methods": ["put"],
+        "route": "teacher/lesson-plan/add-assignment"
+      },
+      {
+        "type": "http",
+        "direction": "out",
+        "name": "res"
+      }
+    ],
+    "scriptFile": "../dist/lesson-plan-add-assignment/index.js"
+  }

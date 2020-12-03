@@ -1,0 +1,18 @@
+{
+    "bindings": [
+      {
+        "authLevel": "anonymous",
+        "type": "httpTrigger",
+        "direction": "in",
+        "name": "req",
+        "methods": ["get"],
+        "route": "teacher/assignment-to-grade/{teacherId}/{sectionId}"
+      },
+      {
+        "type": "http",
+        "direction": "out",
+        "name": "res"
+      }
+    ],
+    "scriptFile": "../dist/assignment-to-graded/index.js"
+  }
